@@ -1,58 +1,34 @@
-/* header bar */
-.header {
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 2em;
-
-  font-size: 36px;
-  font-family: 'Optima', 'Copperplate', Verdana, Impact, cursive;
-}
-
-.header.left {
-  width: auto;
-
-  float: left;
-  display: flex;
-  padding: 0 1em;
-
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.header.right {
-  width: auto;
-
-  float: right;
-  display: flex;
-  padding: 0 1em;
-
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.profile {
-  border-radius: 50%;
-  padding: 10px;
-}
-
-/* navbar */
-.pages {
-  position: fixed;
-  left: 0;
-
-  width: 100%;
-  height: 2em;
-  display: flex;
-  padding: 5px;
+body {
   background: rgb(255, 150, 150);
+}
+
+* {
+  font-family: 'Optima', Verdana, sans-serif;
+}
+
+.main {
+  position: fixed;
+  top: 16%;
+  left: 0;
+
+  width: 100%;
+  height: 75%;
+  display: flex;
 
   align-items: center;
   justify-content: center;
+  overflow: scroll;
+  background: #FFF;
 }
 
-.page {
-  font-family: 'Gill Sans', 'Helvetica', Impact, sans-serif;
-  padding: 0% 2%;
+
+.main.content {
+  position: relative;
+  float: right;
+
+  top: 0;
+  width: 80%;
+
+  padding: 1em;
+  overflow: hidden;
 }
